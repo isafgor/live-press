@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />  
   <title>LIVE PRESS - свежие новости России и мира</title>
 </head>
-<body>
-  <div class="sidebar-mask">
+<body id="body">
+  <div id="sidebar" class="sidebar-mask">
     <aside class="sidebar">
       <div class="logo">
         LIVE PRESS
@@ -38,7 +40,7 @@
               <a href="#">Шоу-бизнес</a>
             </li>
             <li class="sidebar__li">
-              <a href="#">Казань</a>
+              <a href="#">Проишествия</a>
             </li>
             <li class="sidebar__li">
               <a href="#">Регионы</a>
@@ -90,7 +92,7 @@
       </div>
     </aside>
   </div>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__top-part">
       <div class="container">
         <div class="header__media">
@@ -154,7 +156,7 @@
                 <a href="#">Шоу-бизнес</a>
               </li>
               <li class="ul-navigation__li">
-                <a href="#">Казань</a>
+                <a href="#">Проишествия</a>
               </li>
               <li class="ul-navigation__li">
                 <a href="#">Регионы</a>
@@ -167,48 +169,378 @@
         </nav>
     </div>
   </header>
-  <main class="main">
-    <div class="container container_mobile-none">
-      <section class="main-feed">
-        <div class="main-feed__news">
-          <div class="main-news">
-            <article class="main-news__block">
-              <h1 class="main-news__headline">Даниил Панаев о том, как он снялся в ...</h1>
-              <span class="main-news__tag">
-                <span>Новости</span>
-              </span>
+  <main id="main" class="main">
+    <div class="main__tidings container container_mobile-none">
+      <div class="main__left-side">
+        <div class="container_mobile-none">
+            <section class="main-feed">
+              <div class="main-feed__news">
+                <div class="main-news">
+                  <article class="main-news__block">
+                    <h1 class="main-news__headline">Даниил Панаев о том, как он снялся в ...</h1>
+                    <span class="main-news__tag">
+                      <span>Новости</span>
+                    </span>
+                  </article>
+                  <div class="main-news__side">
+                    <article class="junior-block">
+                      <h1 class="junior-block__headline">Алексей Широков: "Я никогда не забуду эти коммиты..."</h1>
+                      <span class="junior-block__tag">
+                        <span>Новости</span>
+                      </span>
+                    </article>
+                    <article class="junior-block">
+                      <h1 class="junior-block__headline">Альфия Сергеева: "Обожаю бегать по утрам"</h1>
+                      <span class="junior-block__tag">
+                        <span>Новости</span>
+                      </span>
+                    </article>
+                    <article class="junior-block">
+                      <h1 class="junior-block__headline">Никита Северьянов: "Я буду устанавливат все фреймворки"</h1>
+                      <span class="junior-block__tag">
+                        <span>Новости</span>
+                      </span>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="container_mobile-none">
+            <section class="categories">
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_sport">Спорт</span>
+                <p class="categories__text ellipsis">Если вы худой, вам надо больше кушать. Если вы не худой, вам не надо больше кушать.</p>
+              </a>
+              <a href="#" class="categories__item ">
+                <span class="categories__tag main_abroad">Зарубеж</span>
+                <p class="categories__text ellipsis">Да они совсем там все такие!</p>
+              </a>
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_auto">Авто</span>
+                <p class="categories__text ellipsis">Кофе - молотый, небо - голубое, отель - Trivago</p>
+              </a>
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_show">Шоу-бизнес</span>
+                <p class="categories__text ellipsis">Алла Пугачева рассказала секрет похудения, надо всего лишь выпить на ночь...</p>
+              </a>
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_news">Новости</span>
+                <p class="categories__text ellipsis">Макколей Калкин все еще жив.</p>
+              </a>
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_economy">Экономика</span>
+                <p class="categories__text ellipsis">Ну, самое главное, она есть. Вроде... Хотя я ее не видел</p>
+              </a>
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_politics">Политика</span>
+                <p class="categories__text ellipsis">Президент России Виктор Викторович Петин обещал поднять экономику.</p>
+              </a>
+              <a href="#" class="categories__item">
+                <span class="categories__tag main_regions">Регионы</span>
+                <p class="categories__text ellipsis">Там все стабильно регионально.</p>
+              </a>
+            </section>
+          </div>
+      </div>
+      <div class="main__right-side desktop">
+        <div class="news-tape">
+          <div class="news-tape__header">
+            Лента новостей
+          </div>
+          <div class="news-tape__main">
+            <article class="news-tape__post">
+              <a href="yoshik-sonic-dead">
+                <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              </a>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
             </article>
-            <div class="main-news__side">
-              <article class="junior-block">
-                <h1 class="junior-block__headline">Алексей Широков: "Я никогда не забуду эти коммиты..."</h1>
-                <span class="junior-block__tag">
-                  <span>Новости</span>
-                </span>
-              </article>
-              <article class="junior-block">
-                <h1 class="junior-block__headline">Альфия Сергеева: "Обожаю бегать по утрам"</h1>
-                <span class="junior-block__tag">
-                  <span>Новости</span>
-                </span>
-              </article>
-              <article class="junior-block">
-                <h1 class="junior-block__headline">Никита Северьянов: "Я буду устанавливат все фреймворки"</h1>
-                <span class="junior-block__tag">
-                  <span>Новости</span>
-                </span>
-              </article>
-            </div>
+            <article class="news-tape__post">
+              <a href="yoshik-sonic-dead">
+                <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              </a>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <a href="yoshik-sonic-dead">
+                <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник.</h3>
+              </a>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <a href="yoshik-sonic-dead">
+                <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник.</h3>
+              </a>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <a href="yoshik-sonic-dead">
+                <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              </a>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <a href="yoshik-sonic-dead">
+                <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              </a>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. </h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально.</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально.</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально.</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+            <article class="news-tape__post">
+              <h3 class="news-tape__headline ellipsis ellipsis2">Вчера умер ежик Соник. Это очень печально. Он говорил, что не хочет умирать. Наклз о грустном событии: "В момент смерти друга, я был в Уганде."</h3>
+              <div class="news-tape__info">
+                <span class="news-tape__time">12:06</span>
+                <span class="news-tape__tag">Новости</span>
+              </div>
+            </article>
+          </div>
+          <div class="news-tape__footer">
+            <a>Все новости</a>
           </div>
         </div>
-      </section>
+      </div>
     </div>
     <div class="container container_mobile-none">
       <section class="advert main_margin-top">
         Тут будет Ваша реклама
       </section>
     </div>
-    <div class="container">
-      <section class="news-on-mobile main_hide-on-desktop">
+
+    <!-- БЛОК С НОВОСТЯМИ -->
+    <div class="container desktop">
+      <section id="cards"></section>
+    </div>
+
+    <div class="container desktop">
+      <section class="bottom-news">
+        <article class="bottom-news__post">
+          <div class="bottom-news__headline ellipsis">
+            Нижние новости в нижнем блоке новостей из Нижнего Тагила
+          </div>
+        </article>
+        <article class="bottom-news__post">
+          <div class="bottom-news__headline ellipsis">
+            Нижние новости в нижнем блоке новостей из Нижнего Тагила
+          </div>
+        </article>
+        <article class="bottom-news__post">
+          <div class="bottom-news__headline ellipsis">
+            Нижние новости в нижнем блоке новостей из Нижнего Тагила
+          </div>
+        </article>
+        <article class="bottom-news__post">
+          <div class="bottom-news__headline ellipsis">
+            Нижние новости в нижнем блоке новостей из Нижнего Тагила
+          </div>
+        </article>
+        <article class="bottom-news__post">
+          <div class="bottom-news__headline ellipsis">
+            Нижние новости в нижнем блоке новостей из Нижнего Тагила
+          </div>
+        </article>
+        <article class="bottom-news__post">
+          <div class="bottom-news__headline ellipsis">
+            Нижние новости в нижнем блоке новостей из Нижнего Тагила
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- СЛАЙДЕР "ФОТО ДНЯ" -->
+    <div class="container desktop">
+      <section id="photo-slider"></section>
+    </div>
+
+    <div class="container desktop">
+      <section id="news-grid" class="news-grid">
+        <div class="news-grid__item news-grid__item_large">
+          <span class="news-grid__category main_news">Новости</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_sport">Спорт</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_economy">Экономика</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_unusual">Необычное</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item news-grid__item_horizontal">
+          <span class="news-grid__category main_abroad">Зарубеж</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item news-grid__item_vertical">
+          <span class="news-grid__category main_auto">Авто</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_sport">Спорт</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_economy">Экономика</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_sport">Спорт</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="news-grid__item">
+          <span class="news-grid__category main_economy">Экономика</span>
+          <div class="news-grid__last">
+            <a href="#" class="news-grid__img" href="#">
+              <img src="" />
+              <div class="news-grid__title">
+                <p class="ellipsis ellipsis2">Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ Антон читает про БЭМ overflow hidden overflow hidden overflow hidden </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div id="news-container" class="container">
+      <section id="news-mobile" class="news-on-mobile main_hide-on-desktop">
         <article class="news-on-mobile__post">
           <div class="news-on-mobile__media">
 
@@ -257,8 +589,13 @@
             </div>
           </div>
         </article>
+        <div class="container container_mobile-none">
+          <section class="advert main_margin-top">
+            Тут будет Ваша реклама
+          </section>
+        </div>
       </section>
-      <section class="remaining-news main_margin-top main_hide-on-mobile">
+      <section id="remain-news" class="remaining-news main_margin-top main_hide-on-mobile">
         <div class="remaining-news__left-block">
           <article class="post-news">
             <div class="post-news__media">
@@ -308,6 +645,9 @@
               </span>
             </div>
           </article>
+          <section class="advert main_margin-vertical">
+            Тут будет Ваша реклама
+          </section>
           <article class="post-news">
             <div class="post-news__media">
 
@@ -371,13 +711,19 @@
               </span>
             </div>
           </article>
+          <section class="advert main_margin-vertical">
+            Тут будет Ваша реклама
+          </section>
         </div>
       </section>
     </div>
   </main>
-  <footer class="footer">
+  <div class="footer-mask" id="footer-mask"></div>
+  <footer id="footer" class="footer">
     <div class="footer__toggle">
-      <span class="toggle-arrow"></span>
+      <span class="toggle-arrow">
+        <span class="arrow"></span>
+      </span>
     </div>
     <div class="container">
       <div class="footer__top-part">
@@ -428,17 +774,33 @@
                 <a href="#">Пользовательское соглашение</a>
               </li>
               <li>
-                <a href="#">Реклама</a>
+                <a href="#">Контакты</a>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a href="#">Редакция</a>
               </li>
             </ul>
           </div>
           <div class="footer__about">
             <ul>
               <li>
-                <a href="#">RSS</a>
+                <a href="#">Правовая информация</a>
+              </li>
+              <li>
+                  <a href="#">Вакансии</a>
+              </li>
+              <li>
+                  <a href="#">Реклама</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__about">
+            <ul>
+              <li>
+                <a href="#">Обратная связь</a>
+              </li>
+              <li>
+                  <a href="#">RSS</a>
               </li>
             </ul>
           </div>
@@ -446,4 +808,5 @@
       </div>
     </div>
   </footer>
-<script type="text/javascript" src="main.js"></script></body>
+<script type="text/javascript" src="/live-press/main.js"></script></body>
+</html>
